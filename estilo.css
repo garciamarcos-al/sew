@@ -1,0 +1,122 @@
+/* ***************************************/
+/*             LaVuelta2026              */
+/*          Estilos generales            */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos: Marcos García Álvarez
+/*  Correo electrónico (uniovi): uo305940@uniovi.es
+/*  Grupo de laboratorio:  L-11          */
+/* ***************************************/
+
+/* Gama cromática
+Color principal (0A2A92)
+-Contraste de 9.71:1 con color secundario
+-Contraste de 11.93:1 con color blanco
+-Contraste de 1.75:1 con color negro
+
+Color secundario (CDEFE6)
+-Contraste de 1.22:1 con color blanco
+-Contraste de 17.08:1 con color negro
+*/
+
+:root {
+    --color-principal: #0A2A92;
+    --color-secundario: #CDEFE6;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+}
+
+/* Especificidad: 001 */
+body {
+    font-family: "Trebuchet MS", "Arial", sans-serif;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+/* Especificidad: 001 */
+header {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+/* Especificidad: 001 */
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+/* Especificidad: 002 */
+header a {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+/* Especificidad: 002 */
+footer a {
+    color: var(--color-secundario);
+    background-color: var(--color-principal);
+    text-decoration: none;
+}
+
+/* Especificidad: 001 */
+h1{
+    color: var(--color-secundario);
+    background-color:var(--color-principal);
+    text-decoration: none;
+}
+
+/* Especificidad: 001  para todos*/
+h2, h3, h4, h5, h6 {
+    color: var(--color-principal);
+    background-color: var(--color-blanco);
+}
+/* Especificidad: 013 */
+header nav a[aria-current="page"] {
+    font-weight: bold;
+    color: var(--color-principal);
+    background-color: var(--color-secundario);
+}
+
+/* Especificidad: 003 */
+header + nav > ol {
+    font-size: 0.75em;
+    list-style: none;
+}
+
+/* Especificidad: 003 */
+nav ol > li {
+    display: inline;
+}
+
+/* Especificidad: 014 */
+header + nav > ol > li:last-child {
+    font-weight: bold;
+}
+
+/* Especificidad: 002 */
+section h3 {
+    flex-basis: 100%;
+}
+
+/* Especificidad 003*/
+section:has(picture) ul { 
+    list-style: none;
+}
+
+/* Especificidad: 024 */
+section:has(picture) ul li:first-child{ 
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Especificidad: 014*/
+section:has(picture) ul li:nth-child(3){ 
+    font-size: 1.25em;
+}
+
+/* Especificidad: 014*/
+section:has(picture) ul li:nth-child(4){ 
+    font-weight: bold;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Ciclista</title>
+
+    <meta name="author" content="Marcos García Álvarez" />
+    <meta name="description" content="Documento ciclista del proyecto LaVuelta2026" />
+    
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" type="image/png" href="./multimedia/favicon.png" />
+</head>
+
+<body>
+   <header>
+    <h1><a href="index.html" title="Página de inicio">LaVuelta2026</a></h1>
+    <nav>
+    <a href="index.html" title="Página de inicio">Inicio</a>
+    <a href="ciclista.html" title="Datos del ciclista" aria-current="page">Ciclista</a>
+    <a href="equipo.html" title="Datos del equipo">Equipo</a>
+    <a href="etapa.html" title="Datos de la etapa">Etapa</a>
+    <a href="meteorologia.html" title="Datos de la meteorología">Meteorología</a>
+    <a href="clasificaciones.html" title="Datos de la clasificación">Clasificaciones</a>
+    <a href="juegos.html" title="Minijuego de la vuelta">Juegos</a>
+    <a href="ayuda.html" title="Información acerca de la página">Ayuda</a>
+   </nav>
+   </header>
+    <nav aria-label="migas">
+    <ol>
+        <li><a href="index.html" title="Página de inicio">Inicio</a></li>
+        <li>>></li>
+        <li>Ciclista</li>
+    </ol>
+   </nav>
+    <main>
+    <h2>Darren Rafferty</h2>
+    <section>
+   <h3>Datos personales</h3>
+   <ul>
+    <li>Darren Rafferty</li>
+    <li>2003-07-01</li>
+    <li>Irlanda</li>
+    <li>EF EDUCATION - EASYPOST</li>
+    <li>Dorsal: 165</li>
+   </ul>
+    <picture>
+    <source srcset="./multimedia/ciclistaMovil.png" media="(max-width: 768px)" width="135" height="205" />
+    <source srcset="./multimedia/ciclistaTablet.png" media="(max-width: 1024px)" width="210" height="319" />
+    <img src="./multimedia/ciclista.png" alt="Foto de Darren Rafferty" width="300" height="455" />
+   </picture>
+    </section>
+   <section>
+    <h3>Datos de los equipos</h3>
+    <ol>
+     <li>EF EDUCATION - EASYPOST</li>
+     <li>HAGENS BERMAN AXEON</li>
+     <li>VILLENEUVE CYCLISTE</li>
+    </ol>
+   </section>
+   <section>
+    <h3>Temporada 2025</h3>
+    <table>
+        <caption>Resultados de la temporada 2025</caption>
+        <thead>
+            <tr>
+                <th scope="col" id="datos">Datos</th>
+                <th scope="col" id="resultados">Resultados</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="datos">Podiums</td>
+                <td headers="resultados">5</td>
+            </tr>
+            <tr>
+                <td headers="datos">Carreras</td>
+                <td headers="resultados">4</td>
+            </tr>
+            <tr>
+                <td headers="datos">Maillots</td>
+                <td headers="resultados">22</td>
+            </tr>
+            <tr>
+                <td headers="datos">Equipos</td>
+                <td headers="resultados">4</td>
+            </tr>
+            <tr>
+                <td headers="datos">Etapas</td>
+                <td headers="resultados">0</td>
+            </tr>
+        </tbody>
+    </table>
+   </section>
+   <section>
+        <h3>Multimedia</h3>
+        <p>
+            Equipo <a href="https://www.lavuelta.es/es/equipo/EFE/ef-education-easypost">EF EDUCATION - EASYPOST</a> en la Vuelta a España 2026.
+        </p>
+        <video controls width="640" height="360" poster="./multimedia/poster.png">
+         <source src="./multimedia/videoequipociclista.mp4" type="video/mp4" />
+         <source src="./multimedia/videoequipociclista.webm" type="video/webm" />
+        </video>
+        <audio controls>
+            <source src="./multimedia/audioequipo.mp3" type="audio/mpeg" />
+            <source src="./multimedia/audioequipo.wav" type="audio/wav" />
+        </audio>
+   </section>
+</main>
+    <footer>
+    <p>Marcos García Álvarez</p>
+    <address><a href="mailto:UO305940@uniovi.es">UO305940@uniovi.es</a></address>
+   </footer>
+</body>
+</html>
